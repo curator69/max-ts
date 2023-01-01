@@ -15,7 +15,7 @@ type ElevatedEmployee = Admin & Employee;
 const e1: ElevatedEmployee = {
   name: 'Max',
   privileges: ['create-server'],
-  startDate: new Date()
+  startDate: new Date(),
 };
 
 type Combinable = string | number;
@@ -40,7 +40,7 @@ result.split(' ');
 const fetchedUserData = {
   id: 'u1',
   name: 'Max',
-  job: { title: 'CEO', description: 'My own company' }
+  job: { title: 'CEO', description: 'My own company' },
 };
 
 console.log(fetchedUserData?.job?.title);
