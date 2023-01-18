@@ -1,3 +1,3 @@
 # max-ts
 
-learning ts with max ts course
+learning ts with max ts course.
