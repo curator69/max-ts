@@ -22,7 +22,7 @@ export const updateTodo: RequestHandler<{ id: string }> = (req, res, next) => {
 
   const updatedText = (req.body as { text: string }).text;
 
-  const todoIndex = TODOS.findIndex(todo => todo.id === todoId);
+  const todoIndex = TODOS.findIndex((todo) => todo.id === todoId);
 
   if (todoIndex < 0) {
     throw new Error('Could not find todo!');
@@ -36,7 +36,7 @@ export const updateTodo: RequestHandler<{ id: string }> = (req, res, next) => {
 export const deleteTodo: RequestHandler = (req, res, next) => {
   const todoId = req.params.id;
 
-  const todoIndex = TODOS.findIndex(todo => todo.id === todoId);
+  const todoIndex = TODOS.findIndex((todo) => todo.id === todoId);
 
   if (todoIndex < 0) {
     throw new Error('Could not find todo!');
